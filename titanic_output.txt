@@ -1,0 +1,79 @@
+============================================================
+TITANIC SURVIVAL PREDICTION - LOGISTIC REGRESSION
+============================================================
+
+============================================================
+DATASET INFORMATION
+============================================================
+Total samples: 891
+Total features: 12
+
+Missing values:
+Age         177
+Cabin       687
+Embarked      2
+dtype: int64
+
+Survival rate: 38.38%
+
+Features selected: ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked', 'FamilySize', 'IsAlone', 'Title', 'AgeGroup', 'FareGroup']
+Feature matrix shape: (891, 12)
+
+Train set size: 712
+Test set size: 179
+
+============================================================
+TRAINING MODEL
+============================================================
+Iteration 0/1000, Loss: 0.6931
+Iteration 100/1000, Loss: 0.4375
+Iteration 200/1000, Loss: 0.4293
+Iteration 300/1000, Loss: 0.4279
+Iteration 400/1000, Loss: 0.4274
+Iteration 500/1000, Loss: 0.4273
+Iteration 600/1000, Loss: 0.4272
+Iteration 700/1000, Loss: 0.4272
+Iteration 800/1000, Loss: 0.4272
+Iteration 900/1000, Loss: 0.4272
+Training completed! Final Loss: 0.4272
+
+============================================================
+MODEL EVALUATION RESULTS
+============================================================
+Accuracy:    0.8324 (83.24%)
+Precision:   0.7692 (76.92%)
+Recall:      0.7692 (76.92%)
+F1-Score:    0.7692 (76.92%)
+Specificity: 0.8684 (86.84%)
+
+Confusion Matrix:
+  True Negatives (TN):  99
+  False Positives (FP): 15
+  False Negatives (FN): 15
+  True Positives (TP):  50
+
+============================================================
+SAMPLE PREDICTIONS (First 10 test cases)
+============================================================
+#    Actual   Predicted  Probability  Result
+------------------------------------------------------------
+1    0        0          0.2103 (21.0%)   ✓
+2    0        0          0.0447 (4.5%)   ✓
+3    1        0          0.3208 (32.1%)   ✗
+4    1        1          0.6373 (63.7%)   ✓
+5    1        1          0.9459 (94.6%)   ✓
+6    0        0          0.0802 (8.0%)   ✓
+7    1        1          0.9085 (90.8%)   ✓
+8    1        0          0.3334 (33.3%)   ✗
+9    0        0          0.1984 (19.8%)   ✓
+10   0        0          0.2646 (26.5%)   ✓
+
+============================================================
+GENERATING VISUALIZATIONS
+============================================================
+
+Visualization saved as 'titanic_logistic_regression_results.png'
+
+============================================================
+ANALYSIS COMPLETE!
+============================================================
